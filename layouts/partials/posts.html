@@ -1,0 +1,15 @@
+<!-- <h1 style="margin-top: 3rem; margin-bottom: 1rem; font-size: 3rem;">{{ i18n "posts.title" }}</h1> -->
+
+<div id="statuscafe" style="padding: .5em; background-color: #3C3836; border: 1px solid #689D6A; max-width: 500px; 	border-radius: 0.3rem;
+">
+	<div id="statuscafe-username" style="margin-bottom: .5em; font-size: 1.7rem; color: #A89984;"></div>
+	<div id="statuscafe-content" style="margin: 0 1em 0.5em 1em; font-size: 1.6rem;"></div>
+</div>
+<script src="{{ "https://status.cafe/current-status.js?name=dpi0" | absURL }}" defer></script>
+
+
+<ul id="posts" style="margin-top: 3rem;">
+	{{- range where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ .Render "li" }}
+{{- end }}
+</ul>

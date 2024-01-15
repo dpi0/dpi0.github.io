@@ -1,0 +1,21 @@
+<!-- layouts/shortcodes/img.html -->
+
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $class := .Get "class" }}
+{{ $style := .Get "style" }}
+{{ $caption := .Get "caption" }}
+
+{{ with $src }}
+<div style="text-align: center;">
+	<a href="{{ . }}" target="_blank" rel="noopener noreferrer">
+		<img src="{{ . }}" alt="{{ with $alt }}{{ . }}{{ else }}Image{{ end }}" {{ with $class }}class="{{ . }}" {{ end
+			}} {{ with $style }}style="{{ . }}" {{ end }}>
+	</a>
+	{{ with $caption }}
+	<p style="font-size: 1.4rem; margin-top: -2px; color: #A89984;">{{ $caption }}</p>
+	{{ end }}
+</div>
+{{ else }}
+<p class="error">Image source not provided.</p>
+{{ end }}

@@ -1,0 +1,111 @@
+{
+			{
+			if not (eq .Site.Params.dark "on") -
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+			{
+				{
+				end -
+			}
+		}
+
+		html {
+			scrollbar-color: #6c6c6c #2e2e2e;
+		}
+
+		:root {
+			--accent: #689D6A;
+			--link-hover: #8EC07C;
+			--bg: #282828;
+			--bg1: #313a3d;
+			--bg2: #A89984;
+			--fg: #FBF1C7;
+			--fg1: #EBDBB2;
+			--logo: #7C6F64;
+			--hr: #5c5c5c;
+		}
+
+		body {
+			color: var(--fg);
+			background: #282828;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+
+
+		header#banner a {
+			color: var(--fg);
+			font-size: 3rem;
+			text-decoration: none;
+		}
+
+		header#banner a:hover {
+			text-decoration: none;
+		}
+
+
+		header#banner h2 {
+			background-color: var(--logo);
+			text-decoration: none;
+			padding: 0.7rem 0.3rem 0.1rem 0.3rem;
+			border-radius: 0.3rem;
+		}
+
+		header#banner h2:hover {
+			background-color: var(--accent);
+		}
+
+
+		header#banner nav ul li a {
+			color: var(--bg2);
+			font-size: 2rem;
+		}
+
+		main#content a {
+			color: var(--accent);
+		}
+
+		main#content p {
+			color: var(--fg1);
+		}
+
+		main#content hr {
+			background: var(--hr);
+		}
+
+		main#content #toc h4 {
+			color: var(--fg);
+		}
+
+		main#content ul#posts small {
+			color: var(--bg2);
+		}
+
+		main#content ul#posts li a:hover {
+			color: var(--link-hover);
+		}
+
+		main#content ul#posts {
+			/* line-height: 4rem; */
+			font-size: 1.8rem;
+		}
+
+		main#content header#post-header div {
+			color: var(--bg2);
+		}
+
+			{
+				{
+				- if not (eq .Site.Params.dark "on") -
+			}
+		}
+	}
+
+		{
+			{
+			- end -
+		}
+	}

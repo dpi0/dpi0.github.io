@@ -1,0 +1,21 @@
+{{ define "main" }}
+<h3>tag: {{ .Title }}</h3>
+<span class="tagInfo" style="font-size: 1.6rem; color: #A89984;">
+    contains
+    {{ len .Pages }}
+    {{ if ge (len .Pages) 2 }}
+        posts
+    {{ else }}
+        post
+    {{ end }}
+</span>
+
+<ul id="posts">
+{{- range .Pages }}
+    <p>{{ .Render "li" }}</p> 
+{{- end }}
+</ul>
+
+<!-- <a href="/tags" class="allTags" style="font-size: 1.6rem;">go to all tags →</a> -->
+
+{{ end }}
