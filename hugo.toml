@@ -1,4 +1,4 @@
-baseURL = 'https://echo4.pages.dev'
+baseURL = 'https://dpi0.github.io'
 languageCode = 'en-us'
 title = 'echo'
 enableInlineShortcodes = true
@@ -11,12 +11,12 @@ dark = "on"
 highlight = true
 
 [menu]
-[[menu.main]]
-identifier = "posts"
-name = "posts"
-title = "posts"
-url = "/"
-weight = 10
+# [[menu.main]]
+# identifier = "posts"
+# name = "posts"
+# title = "posts"
+# url = "/"
+# weight = 10
 
 [[menu.main]]
 identifier = "about"

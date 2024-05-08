@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a reflection in the sea of internet">
+    
+    <link rel="shortcut icon" href="http://localhost:1313/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    <link rel="canonical" href="http://localhost:1313/the-advent-of-ai-in-developer-land/" />
+
+    
+        
+        <title>The Advent of AI in Developer Land | echo</title>
+    
+</head>
+<body><header id="banner">
+    <h2><a href="http://localhost:1313/">echo</a></h2>
+    <nav>
+        <ul>
+            <li>
+                <a href="/about/" title="about">about</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main id="content">
+<article>
+	<header id="post-header">
+		<div>
+			
+			<h1 style="font-size: 4rem; color: #0091bd; text-decoration: underline; ">The Advent of AI in Developer Land</h1>
+			
+			
+			<time>December 28, 2023</time>
+			
+			
+			
+			<span style="padding-left: 0.5rem;">
+				
+				<a href="/tags/ai" class="tag">#ai</a>
+				
+				<a href="/tags/dev" class="tag">#dev</a>
+				
+			</span>
+		</div>
+	</header><aside id="toc">
+    <h4>Table of Contents</h4>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#understanding-the-impact">Understanding the Impact</a></li>
+    <li><a href="#code-magic-with-machine-learning">Code Magic with Machine Learning</a></li>
+    <li><a href="#ai-in-action-table-recognition">AI in Action: Table Recognition</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+</aside>
+
+<h2 id="introduction">Introduction</h2>
+<p>Artificial Intelligence (AI) has become an integral part of the developer landscape, revolutionizing the way we approach problems and build solutions. In this blog post, we&rsquo;ll explore some exciting developments and applications in the ever-evolving world of AI.</p>
+<h2 id="understanding-the-impact">Understanding the Impact</h2>
+<blockquote>
+<p>&ldquo;Artificial intelligence is the new electricity.&rdquo; - Andrew Ng</p>
+</blockquote>
+<p>As Andrew Ng rightly puts it, AI is transforming industries much like electricity did in the past. From natural language processing to computer vision, AI technologies are reshaping the way developers create applications.</p>
+<h2 id="code-magic-with-machine-learning">Code Magic with Machine Learning</h2>
+<p>Let&rsquo;s dive into a simple example of using machine learning in Python to classify images. Below is a snippet of Python code using the popular <code>scikit-learn</code> library:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Load the iris dataset</span>
+</span></span><span class="line"><span class="cl"><span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span>
+</span></span><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Split the dataset into training and testing sets</span>
+</span></span><span class="line"><span class="cl"><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create a KNN classifier</span>
+</span></span><span class="line"><span class="cl"><span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Train the model</span>
+</span></span><span class="line"><span class="cl"><span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Make predictions on the test set</span>
+</span></span><span class="line"><span class="cl"><span class="n">y_pred</span> <span class="o">=</span> <span class="n">knn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Evaluate the model</span>
+</span></span><span class="line"><span class="cl"><span class="n">accuracy</span> <span class="o">=</span> <span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Accuracy: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>In this example, we use a K-Nearest Neighbors classifier to classify iris flowers based on their features.</p>
+<h2 id="ai-in-action-table-recognition">AI in Action: Table Recognition</h2>
+<p>Tables are a common sight in data processing. AI has made great strides in table recognition, making it easier for developers to extract structured data from documents. Here&rsquo;s an example table:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Occupation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>John Doe</td>
+<td>28</td>
+<td>Developer</td>
+</tr>
+<tr>
+<td>Jane Smith</td>
+<td>35</td>
+<td>Data Scientist</td>
+</tr>
+<tr>
+<td>Bob Johnson</td>
+<td>42</td>
+<td>Designer</td>
+</tr>
+</tbody>
+</table>
+<h2 id="conclusion">Conclusion</h2>
+<p>The advent of AI brings endless possibilities for developers. Whether you&rsquo;re leveraging machine learning for predictive analytics or using AI to extract insights from complex data, the future is promising. Stay tuned for more exciting developments on the AI frontier!</p>
+<p>Have you tried incorporating AI into your projects? Share your experiences and thoughts in the comments below.</p>
+</article>
+
+
+<section>
+	<div>
+		
+		
+		
+		<hr>
+		<section>
+			<p style="font-size: 3rem; font-weight: bold; text-decoration: underline;">More Like This</p>
+			<div>
+				<ul id="posts">
+					
+					<p><li>
+	<p>
+		<a href="http://localhost:1313/getting-started-with-echo-framework-in-go/">
+			<span>Getting Started with Echo Framework in Go</span>
+		</a>
+		<small><time>Dec 28, 2023</time></small>
+	</p>
+</li>
+</p>
+					
+					<p><li>
+	<p>
+		<a href="http://localhost:1313/markdown-syntax-guide/">
+			<span>Markdown Syntax Guide</span>
+		</a>
+		<small><time>Dec 27, 2023</time></small>
+	</p>
+</li>
+</p>
+					
+				</ul>
+			</div>
+		</section>
+		
+		
+
+	</div>
+</section>
+
+
+
+
+
+
+<hr>
+<script src="https://utteranc.es/client.js"
+        repo="dpi0/echo"
+        issue-term="pathname"
+        theme="gruvbox-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+        </main><footer id="footer">
+	
+	<style>
+		p {
+			color: #003b4d;
+}
+
+		a {
+			color: #0091db;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #00ace0;
+			text-decoration: underline;
+		}
+	</style>
+	<p xmlns:cc="http://creativecommons.org/ns#">posts by <span property="cc:attributionName"><a
+		href="https://github.com/dpi0">dpi0</a></span> — site built with <a
+			target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">hugo</a></p>
+
+
+</footer>
+</body>
+</html>

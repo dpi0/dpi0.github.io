@@ -7,13 +7,13 @@
 }
 
 :root {
-	--accent: #689D6A;
-	--link-hover: #8EC07C;
-	--bg: #282828;
-	--bg1: #313a3d;
-	--bg2: #A89984;
-	--fg: #FBF1C7;
-	--fg2: #D5C4A1;
+	/* --accent: #009CCC; */
+	/* --link-hover: #8EC07C; */
+	/* --bg: #f0fcff; */
+	/* --bg1: #313a3d; */
+	/* --bg2: #A89984; */
+	/* --fg: #ff0000; */
+	--fg2: #007194;
 }
 
 html {
@@ -71,7 +71,7 @@ header#banner nav ul li {
 
 header#banner nav ul li a:hover {
 	text-decoration: underline;
-	color: var(--fg2);
+	/* color: var(--fg2); */
 }
 
 main#content a {
@@ -90,6 +90,7 @@ main#content h4,
 main#content h5,
 main#content h6 {
 	margin-bottom: 1rem;
+	color: #003b4d;
 	line-height: 1.15;
 }
 
@@ -189,7 +190,7 @@ main#content #toc {
 
 main#content #toc h4 {
 	font-size: 1.06em;
-	color: var(--fg);
+	/* color: var(--fg); */
 	margin: 0;
 }
 
@@ -283,7 +284,7 @@ main#content table {
 main#content table,
 main#content th,
 main#content td {
-	border: 1px dotted var(--fg);
+	border: 1px dotted;
 	border-radius: 0.3rem 0.3rem;
 }
 
@@ -328,7 +329,7 @@ main#content pre code {
 }
 
 main#content mark {
-	background-color: #689D6A;
+	background-color: var(--accent);
 }
 
 main#content .footnotes {

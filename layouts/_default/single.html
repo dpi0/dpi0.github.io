@@ -4,10 +4,10 @@
 		<div>
 			{{ if eq .Title "About Me" }}
 			<!-- This is the About page, do not display the date -->
-			<h1 style="font-size: 4rem; color: #689D6A; text-decoration: underline; margin-bottom: -2rem; ">{{ .Title }}
+			<h1 style="font-size: 4rem; color: #0091bd; text-decoration: underline; margin-bottom: -2rem; ">{{ .Title }}
 			</h1>
 			{{ else }}
-			<h1 style="font-size: 4rem; color: #689D6A; text-decoration: underline; ">{{ .Title }}</h1>
+			<h1 style="font-size: 4rem; color: #0091bd; text-decoration: underline; ">{{ .Title }}</h1>
 			{{ if .Date }}
 			{{ if eq .Lastmod .Date }}
 			<time>{{ .Date | time.Format (i18n "post.created") }}</time>
