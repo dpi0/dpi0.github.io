@@ -5,6 +5,7 @@ showRelated: false
 ---
 
 <!-- ![dpi0's GitHub stats](https://github-readme-stats.vercel.app/api?username=dpi0&show_icons=true&theme=gruvbox) -->
+hi! 👋 
 
 <i class="nf nf-cod-mail"></i> [dpi0.dev@proton.me](mailto:dpi0.dev@proton.me)
 

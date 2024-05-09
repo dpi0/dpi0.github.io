@@ -1,7 +1,7 @@
 +++
 title = "the advent of ai in developer land"
 date = 2024-05-06
-lastmod = 2024-05-06
+updated = 2024-05-07
 tags = [
     "ai",
     "dev",

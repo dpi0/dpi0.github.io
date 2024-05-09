@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a reflection in the sea of internet">
+    
+    <link rel="shortcut icon" href="http://localhost:1313/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    <link rel="canonical" href="http://localhost:1313/basics-of-the-rust-language/" />
+
+    
+        
+        <title>basics of the rust language | echo</title>
+    
+</head>
+<body><header id="banner">
+    <h2><a href="http://localhost:1313/">echo</a></h2>
+    <nav>
+        <ul>
+            <li>
+                <a href="/about/" title="about">about</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main id="content">
+<article>
+	<header id="post-header">
+		<div>
+			
+			<h1 style="font-size: 4rem; color: #003b4d; text-decoration: underline; ">basics of the rust language</h1>
+			
+			
+			
+			
+			
+			
+			<time>may 9, 2024</time>
+			
+			
+			<span style="padding-left: 0.5rem;">
+				
+				<a href="/tags/dev" class="tag">#dev</a>
+				
+				<a href="/tags/rust" class="tag">#rust</a>
+				
+			</span>
+		</div>
+	</header><aside id="toc">
+    <h4>table of contents</h4>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#what-is-rust">what is rust?</a></li>
+    <li><a href="#installation">installation</a></li>
+    <li><a href="#creating-your-first-rust-program">creating your first rust program</a></li>
+    <li><a href="#variables-and-data-types">variables and data types</a></li>
+    <li><a href="#rust-ecosystem">rust ecosystem</a></li>
+    <li><a href="#conclusion">conclusion</a></li>
+  </ul>
+</nav>
+</aside>
+
+<h2 id="what-is-rust">what is rust?</h2>
+<p><a href="https://www.rust-lang.org/">rust</a> is a systems programming language that focuses on safety, speed, and concurrency. it provides powerful memory safety guarantees without needing a garbage collector.</p>
+<h2 id="installation">installation</h2>
+<p>to get started with rust, you need to install it on your system. you can do this by visiting the <a href="https://www.rust-lang.org/tools/install">official rust website</a> and following the instructions for your platform.</p>
+<h2 id="creating-your-first-rust-program">creating your first rust program</h2>
+<p>let&rsquo;s create a simple &ldquo;hello, world!&rdquo; program in rust. create a file named <code>main.rs</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="c1">// main.rs
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;Hello, world!&#34;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><p>compile and run your program:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="n">rustc</span><span class="w"> </span><span class="n">main</span><span class="p">.</span><span class="n">rs</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">.</span><span class="o">/</span><span class="n">main</span><span class="w">
+</span></span></span></code></pre></div><p>you should see hello, world! printed to the console.</p>
+<h2 id="variables-and-data-types">variables and data types</h2>
+<p>rust is a statically typed language, which means that you must declare the type of each variable. here&rsquo;s an example of declaring variables and their data types in rust:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="c1">// main.rs
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">fn</span> <span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">x</span>: <span class="kt">i32</span> <span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="c1">// integer
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">y</span>: <span class="kt">f64</span> <span class="o">=</span><span class="w"> </span><span class="mf">3.14</span><span class="p">;</span><span class="w"> </span><span class="c1">// floating point number
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">z</span>: <span class="kt">bool</span> <span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"> </span><span class="c1">// boolean
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">greeting</span>: <span class="kp">&amp;</span><span class="kt">str</span> <span class="o">=</span><span class="w"> </span><span class="s">&#34;Hello, Rust!&#34;</span><span class="p">;</span><span class="w"> </span><span class="c1">// string slice
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;x: </span><span class="si">{}</span><span class="s">, y: </span><span class="si">{}</span><span class="s">, z: </span><span class="si">{}</span><span class="s">, greeting: </span><span class="si">{}</span><span class="s">&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">greeting</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></div><h2 id="rust-ecosystem">rust ecosystem</h2>
+<p>rust has a vibrant ecosystem with a growing number of libraries and tools. you can explore more about rust and its ecosystem in the official documentation.</p>
+<h2 id="conclusion">conclusion</h2>
+<p>congratulations! you&rsquo;ve created your first rust program and learned about its basic syntax and features. rust&rsquo;s safety and performance make it an excellent choice for systems programming tasks. happy coding in rust!</p>
+
+</article>
+
+<section>
+	<div>
+		
+		
+		
+		<hr>
+		<section>
+			<p style="font-size: 3rem; font-weight: bold; text-decoration: underline;">more like this</p>
+			<div>
+				<ul id="posts">
+					
+					<p><li>
+	<p>
+		<a href="http://localhost:1313/finding-the-rust-language/">
+			<span>finding the rust language</span>
+		</a>
+		<small><time>may 9, 2024</time></small>
+	</p>
+</li>
+</p>
+					
+					<p><li>
+	<p>
+		<a href="http://localhost:1313/getting-started-with-echo-framework-in-go/">
+			<span>getting started with echo framework in go</span>
+		</a>
+		<small><time>may 8, 2024</time></small>
+	</p>
+</li>
+</p>
+					
+					<p><li>
+	<p>
+		<a href="http://localhost:1313/the-advent-of-ai-in-developer-land/">
+			<span>the advent of ai in developer land</span>
+		</a>
+		<small><time>may 6, 2024</time></small>
+	</p>
+</li>
+</p>
+					
+				</ul>
+			</div>
+		</section>
+		
+		
+	</div>
+</section>
+
+
+<script src="https://utteranc.es/client.js"
+repo="dpi0/dpi0.github.io"
+issue-term="pathname"
+theme="github-light"
+crossorigin="anonymous"
+async>
+</script>
+
+
+
+        </main><footer id="footer">
+	
+	<style>
+		p {
+			color: #003b4d;
+}
+
+		a {
+			color: #0091db;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #00ace0;
+			text-decoration: underline;
+		}
+	</style>
+	<p xmlns:cc="http://creativecommons.org/ns#">posts by <span property="cc:attributionName"><a
+		href="https://github.com/dpi0">dpi0</a></span> — site built with <a
+			target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">hugo</a></p>
+</footer>
+</body>
+</html>

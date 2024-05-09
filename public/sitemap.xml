@@ -2,22 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/basics-of-the-rust-language/</loc>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/dev/</loc>
-    <lastmod>2024-05-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-05-08T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/finding-the-rust-language/</loc>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/philosophy/</loc>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/rust/</loc>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-05-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/getting-started-with-echo-framework-in-go/</loc>
     <lastmod>2024-05-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/go/</loc>
-    <lastmod>2024-05-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-05-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-05-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ai/</loc>
@@ -26,18 +38,8 @@
     <loc>http://localhost:1313/the-advent-of-ai-in-developer-land/</loc>
     <lastmod>2024-05-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/markdown-syntax-guide/</loc>
-    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/syntax/</loc>
-    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/themes/</loc>
-    <lastmod>2024-05-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

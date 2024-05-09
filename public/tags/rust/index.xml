@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rust on echo</title>
+    <link>http://localhost:1313/tags/rust/</link>
+    <description>Recent content in Rust on echo</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>basics of the rust language</title>
+      <link>http://localhost:1313/basics-of-the-rust-language/</link>
+      <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/basics-of-the-rust-language/</guid>
+      <description>table of contents what is rust? installation creating your first rust program variables and data types rust ecosystem conclusion what is rust? rust is a systems programming language that focuses on safety, speed, and concurrency. it provides powerful memory safety guarantees without needing a garbage collector.&#xA;installation to get started with rust, you need to install it on your system. you can do this by visiting the official rust website and following the instructions for your platform.</description>
+    </item>
+    <item>
+      <title>finding the rust language</title>
+      <link>http://localhost:1313/finding-the-rust-language/</link>
+      <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/finding-the-rust-language/</guid>
+      <description>table of contents introduction the quest for safety and reliability ownership model and borrowing rules compile-time checks embracing concurrency and performance fearless concurrency model leveraging ownership and lifetimes cultivating a community of empathy and inclusivity values of the rust community the beauty of simplicity and elegance expressive syntax and powerful abstractions ergonomic design conclusion: the journey continues introduction in the vast landscape of programming languages, each one carries its own philosophy, its own set of principles and values.</description>
+    </item>
+  </channel>
+</rss>

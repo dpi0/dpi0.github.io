@@ -22,8 +22,8 @@ html {
 
 body {
 	font-size: 1.8rem;
-	/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
-	font-family: Menlo;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	/* font-family: Menlo; */
 	/* font-family: merriweather; */
 	/* font-family: "/static/fonts/SpaceMonoNerdFont-Regular.ttf"; */
 	color: var(--bg1);
@@ -93,19 +93,22 @@ main#content h5,
 main#content h6 {
 	margin-bottom: 1rem;
 	color: #003b4d;
+	text-decoration: underline;
+	/* padding: 0.2rem; */
+	/* border: 2px solid #003B4D; */
+	/* border-radius: 0.3rem 0.3rem;  */
 	line-height: 1.15;
+	display: inline-block;
 }
 
 main#content h1 {
 	font-size: 3.5rem;
-	text-decoration: underline;
 
 }
 
 main#content h2 {
 	font-size: 3rem;
 	margin-top: 4rem;
-	text-decoration: underline;
 }
 
 main#content h3 {

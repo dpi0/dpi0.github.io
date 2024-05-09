@@ -1,7 +1,7 @@
 +++
 title = "getting started with echo framework in go"
 date = 2024-05-08
-updated = 2024-05-09
+# updated = 2024-05-09
 tags = [
     "dev",
     "go"

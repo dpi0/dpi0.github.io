@@ -2,18 +2,23 @@
 <article>
 	<header id="post-header">
 		<div>
-			{{ if eq .Title "About Me" }}
+			{{ if eq .Title "about me" }}
 			<!-- This is the About page, do not display the date -->
 			<h1 style="font-size: 4rem; color: #003B4D; text-decoration: underline; margin-bottom: -2rem; ">{{ .Title }}
 			</h1>
 			{{ else }}
 			<h1 style="font-size: 4rem; color: #003b4d; text-decoration: underline; ">{{ .Title }}</h1>
-			{{ if .Date }}
-			{{ if eq .Lastmod .Date }}
-			<time>{{ .Date | time.Format (i18n "post.created") | lower}}</time>
-			{{ else }}
-			<time>{{ .Lastmod | time.Format (i18n "post.updated") | lower}}</time>
-			{{ end }}
+			<!-- {{ if .Date }} -->
+			<!-- {{ if eq .Lastmod .Date }} -->
+			<!-- <time>{{ .Date | time.Format (i18n "post.created") | lower}}</time> -->
+			<!-- {{ else }} -->
+			<!-- <time>updated {{ .Lastmod | time.Format (i18n "post.updated") | lower}}</time> -->
+			<!-- {{ end }} -->
+			<!-- {{ end }} -->
+			{{ if .Params.updated }}
+		<time><strong>updated</strong> {{ .Params.updated | dateFormat "Jan 2, 2006" | lower }} </time>
+			{{ else if .Date }}
+			<time>{{ .Lastmod | time.Format (i18n "post.created") | lower}}</time>
 			{{ end }}
 			{{ end }}
 			<span style="padding-left: 0.5rem;">
@@ -24,6 +29,9 @@
 		</div>
 	</header>
 	{{- .Content -}}
+	{{ if .Params.updated }}
+	<small><time><strong>originally posted on {{ .Lastmod | time.Format (i18n "post.created") | lower}}</strong></time></small>
+	{{ end }}
 </article>
 
 <section>
@@ -51,11 +59,11 @@
 {{ if eq .Title "about me" }}
 {{ else }}
 <script src="https://utteranc.es/client.js"
-        repo="dpi0/dpi0.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
+repo="dpi0/dpi0.github.io"
+issue-term="pathname"
+theme="github-light"
+crossorigin="anonymous"
+async>
 </script>
 {{ end }}
 
