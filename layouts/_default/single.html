@@ -4,15 +4,15 @@
 		<div>
 			{{ if eq .Title "About Me" }}
 			<!-- This is the About page, do not display the date -->
-			<h1 style="font-size: 4rem; color: #0091bd; text-decoration: underline; margin-bottom: -2rem; ">{{ .Title }}
+			<h1 style="font-size: 4rem; color: #003B4D; text-decoration: underline; margin-bottom: -2rem; ">{{ .Title }}
 			</h1>
 			{{ else }}
-			<h1 style="font-size: 4rem; color: #0091bd; text-decoration: underline; ">{{ .Title }}</h1>
+			<h1 style="font-size: 4rem; color: #003b4d; text-decoration: underline; ">{{ .Title }}</h1>
 			{{ if .Date }}
 			{{ if eq .Lastmod .Date }}
-			<time>{{ .Date | time.Format (i18n "post.created") }}</time>
+			<time>{{ .Date | time.Format (i18n "post.created") | lower}}</time>
 			{{ else }}
-			<time>{{ .Lastmod | time.Format (i18n "post.updated") }}</time>
+			<time>{{ .Lastmod | time.Format (i18n "post.updated") | lower}}</time>
 			{{ end }}
 			{{ end }}
 			{{ end }}
@@ -26,7 +26,6 @@
 	{{- .Content -}}
 </article>
 
-
 <section>
 	<div>
 		{{ if .Params.showRelated | default true }}
@@ -34,7 +33,7 @@
 		{{ if gt (len $related) 0 }}
 		<hr>
 		<section>
-			<p style="font-size: 3rem; font-weight: bold; text-decoration: underline;">More Like This</p>
+			<p style="font-size: 3rem; font-weight: bold; text-decoration: underline;">more like this</p>
 			<div>
 				<ul id="posts">
 					{{ range $related }}
@@ -46,21 +45,16 @@
 		{{ else }}
 		{{ end }}
 		{{ end }}
-
 	</div>
 </section>
 
-
-
-
-
-{{ if eq .Title "About Me" }}
+{{ if eq .Title "about me" }}
 {{ else }}
 <hr>
 <script src="https://utteranc.es/client.js"
         repo="dpi0/echo"
         issue-term="pathname"
-        theme="gruvbox-dark"
+        theme="github-light"
         crossorigin="anonymous"
         async>
 </script>

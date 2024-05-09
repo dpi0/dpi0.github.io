@@ -1,5 +1,5 @@
 {{ define "main" }}
-<h3>tag: {{ .Title }}</h3>
+<h3>tag: {{ .Title | lower }}</h3>
 <span class="tagInfo" style="font-size: 1.6rem; color: #003b4d;">
     contains
     {{ len .Pages }}

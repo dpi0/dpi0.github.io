@@ -22,7 +22,9 @@ html {
 
 body {
 	font-size: 1.8rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+	font-family: Menlo;
+	/* font-family: merriweather; */
 	/* font-family: "/static/fonts/SpaceMonoNerdFont-Regular.ttf"; */
 	color: var(--bg1);
 	width: 100%;

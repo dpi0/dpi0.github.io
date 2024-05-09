@@ -5,6 +5,8 @@ enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
+# to change the syntax highlight theme: https://makewithhugo.com/syntax-hightlight-color/
+
 [params]
 description = "a reflection in the sea of internet"
 dark = "on"

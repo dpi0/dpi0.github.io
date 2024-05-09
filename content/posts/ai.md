@@ -1,7 +1,7 @@
 +++
-title = "The Advent of AI in Developer Land"
-date = 2023-12-28
-lastmod = 2023-12-28
+title = "the advent of ai in developer land"
+date = 2024-05-06
+lastmod = 2024-05-06
 tags = [
     "ai",
     "dev",
@@ -10,19 +10,19 @@ tags = [
 
 {{<toc>}}
 
-## Introduction
+## introduction
 
-Artificial Intelligence (AI) has become an integral part of the developer landscape, revolutionizing the way we approach problems and build solutions. In this blog post, we'll explore some exciting developments and applications in the ever-evolving world of AI.
+artificial intelligence (ai) has become an integral part of the developer landscape, revolutionizing the way we approach problems and build solutions. in this blog post, we'll explore some exciting developments and applications in the ever-evolving world of ai.
 
-## Understanding the Impact
+## understanding the impact
 
-> "Artificial intelligence is the new electricity." - Andrew Ng
+> "artificial intelligence is the new electricity." - andrew ng
 
-As Andrew Ng rightly puts it, AI is transforming industries much like electricity did in the past. From natural language processing to computer vision, AI technologies are reshaping the way developers create applications.
+as andrew ng rightly puts it, ai is transforming industries much like electricity did in the past. from natural language processing to computer vision, ai technologies are reshaping the way developers create applications.
 
-## Code Magic with Machine Learning
+## code magic with machine learning
 
-Let's dive into a simple example of using machine learning in Python to classify images. Below is a snippet of Python code using the popular `scikit-learn` library:
+let's dive into a simple example of using machine learning in python to classify images. below is a snippet of python code using the popular `scikit-learn` library:
 
 ```python
 from sklearn import datasets
@@ -52,20 +52,20 @@ accuracy = metrics.accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy}")
 ```
 
-In this example, we use a K-Nearest Neighbors classifier to classify iris flowers based on their features.
+in this example, we use a k-nearest neighbors classifier to classify iris flowers based on their features.
 
-## AI in Action: Table Recognition
+## ai in action: table recognition
 
-Tables are a common sight in data processing. AI has made great strides in table recognition, making it easier for developers to extract structured data from documents. Here's an example table:
+tables are a common sight in data processing. ai has made great strides in table recognition, making it easier for developers to extract structured data from documents. here's an example table:
 
-| Name       | Age | Occupation    |
+| name       | age | occupation    |
 |------------|-----|---------------|
-| John Doe   | 28  | Developer     |
-| Jane Smith | 35  | Data Scientist|
-| Bob Johnson| 42  | Designer      |
+| john doe   | 28  | developer     |
+| jane smith | 35  | data scientist|
+| bob johnson| 42  | designer      |
 
-## Conclusion
+## conclusion
 
-The advent of AI brings endless possibilities for developers. Whether you're leveraging machine learning for predictive analytics or using AI to extract insights from complex data, the future is promising. Stay tuned for more exciting developments on the AI frontier!
+the advent of ai brings endless possibilities for developers. whether you're leveraging machine learning for predictive analytics or using ai to extract insights from complex data, the future is promising. stay tuned for more exciting developments on the ai frontier!
 
-Have you tried incorporating AI into your projects? Share your experiences and thoughts in the comments below.
+have you tried incorporating ai into your projects? share your experiences and thoughts in the comments below.

@@ -12,7 +12,7 @@
 
     
         
-        <title>Getting Started with Echo Framework in Go | echo</title>
+        <title>getting started with echo framework in go | echo</title>
     
 </head>
 <body><header id="banner">
@@ -30,10 +30,10 @@
 	<header id="post-header">
 		<div>
 			
-			<h1 style="font-size: 4rem; color: #0091bd; text-decoration: underline; ">Getting Started with Echo Framework in Go</h1>
+			<h1 style="font-size: 4rem; color: #003b4d; text-decoration: underline; ">getting started with echo framework in go</h1>
 			
 			
-			<time>December 28, 2023</time>
+			<time>may 8, 2024</time>
 			
 			
 			
@@ -46,27 +46,27 @@
 			</span>
 		</div>
 	</header><aside id="toc">
-    <h4>Table of Contents</h4>
+    <h4>table of contents</h4>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#what-is-echo">What is Echo?</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#creating-your-first-api">Creating Your First API</a></li>
-    <li><a href="#handling-parameters">Handling Parameters</a></li>
-    <li><a href="#markdown-style-pictures">Markdown-Style Pictures</a></li>
-    <li><a href="#tables">Tables</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#what-is-echo">what is echo?</a></li>
+    <li><a href="#installation">installation</a></li>
+    <li><a href="#creating-your-first-api">creating your first api</a></li>
+    <li><a href="#handling-parameters">handling parameters</a></li>
+    <li><a href="#markdown-style-pictures">markdown-style pictures</a></li>
+    <li><a href="#tables">tables</a></li>
+    <li><a href="#conclusion">conclusion</a></li>
   </ul>
 </nav>
 </aside>
 
-<h2 id="what-is-echo">What is Echo?</h2>
-<p><a href="https://echo.labstack.com/">Echo</a> is a fast and minimalist web framework for Go. It&rsquo;s designed for building robust and scalable web applications and APIs with minimal boilerplate code.</p>
-<h2 id="installation">Installation</h2>
-<p>To get started, you need to install the Echo framework. Open your terminal and run:</p>
+<h2 id="what-is-echo">what is echo?</h2>
+<p><a href="https://echo.labstack.com/">echo</a> is a fast and minimalist web framework for go. it&rsquo;s designed for building robust and scalable web applications and apis with minimal boilerplate code.</p>
+<h2 id="installation">installation</h2>
+<p>to get started, you need to install the echo framework. open your terminal and run:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">go get -u github.com/labstack/echo/v4
-</span></span></code></pre></div><h2 id="creating-your-first-api">Creating Your First API</h2>
-<p>Let&rsquo;s create a simple API endpoint using Echo. Create a file named <code>main.go</code>:</p>
+</span></span></code></pre></div><h2 id="creating-your-first-api">creating your first api</h2>
+<p>let&rsquo;s create a simple api endpoint using echo. create a file named <code>main.go</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// main.go
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kn">package</span> <span class="nx">main</span>
 </span></span><span class="line"><span class="cl">
@@ -87,11 +87,11 @@
 </span></span><span class="line"><span class="cl">	<span class="c1">// Start the server
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">e</span><span class="p">.</span><span class="nf">Start</span><span class="p">(</span><span class="s">&#34;:8080&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><p>Run your application:</p>
+</span></span></code></pre></div><p>run your application:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">go run main.go
-</span></span></code></pre></div><p>Visit <a href="http://localhost:8080/hello">http://localhost:8080/hello</a> in your browser to see the result.</p>
-<h2 id="handling-parameters">Handling Parameters</h2>
-<p>Echo makes it easy to handle parameters in your API. Let&rsquo;s create an endpoint that takes a name parameter:</p>
+</span></span></code></pre></div><p>visit <a href="http://localhost:8080/hello">http://localhost:8080/hello</a> in your browser to see the result.</p>
+<h2 id="handling-parameters">handling parameters</h2>
+<p>echo makes it easy to handle parameters in your api. let&rsquo;s create an endpoint that takes a name parameter:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="c1">// main.go
 </span></span></span><span class="line"><span class="cl"><span class="c1">// ...
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
@@ -100,36 +100,35 @@
 </span></span><span class="line"><span class="cl">	<span class="nx">name</span> <span class="o">:=</span> <span class="nx">c</span><span class="p">.</span><span class="nf">Param</span><span class="p">(</span><span class="s">&#34;name&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="nx">c</span><span class="p">.</span><span class="nf">String</span><span class="p">(</span><span class="nx">http</span><span class="p">.</span><span class="nx">StatusOK</span><span class="p">,</span> <span class="s">&#34;Hello, &#34;</span><span class="o">+</span><span class="nx">name</span><span class="o">+</span><span class="s">&#34;!&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">})</span>
-</span></span></code></pre></div><h2 id="markdown-style-pictures">Markdown-Style Pictures</h2>
-<p>You can embed images in your markdown-style documentation. Here&rsquo;s an example:</p>
+</span></span></code></pre></div><h2 id="markdown-style-pictures">markdown-style pictures</h2>
+<p>you can embed images in your markdown-style documentation. here&rsquo;s an example:</p>
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/768px-Go_Logo_Blue.svg.png" alt="Echo Logo"></p>
-<h2 id="tables">Tables</h2>
+<h2 id="tables">tables</h2>
 <table>
 <thead>
 <tr>
-<th>Method</th>
-<th>Endpoint</th>
-<th>Description</th>
+<th>method</th>
+<th>endpoint</th>
+<th>description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>GET</td>
+<td>get</td>
 <td>/hello</td>
-<td>Get a hello message</td>
+<td>get a hello message</td>
 </tr>
 <tr>
-<td>GET</td>
+<td>get</td>
 <td>/greet/:name</td>
-<td>Greet a user</td>
+<td>greet a user</td>
 </tr>
 </tbody>
 </table>
-<h2 id="conclusion">Conclusion</h2>
-<p>Congratulations! You&rsquo;ve created a simple API using the Echo framework in Go. Echo&rsquo;s simplicity and performance make it an excellent choice for building web applications and APIs.</p>
-<p>Feel free to explore more features of Echo in the <a href="https://echo.labstack.com/">official documentation</a>. Happy coding!</p>
+<h2 id="conclusion">conclusion</h2>
+<p>congratulations! you&rsquo;ve created a simple api using the echo framework in go. echo&rsquo;s simplicity and performance make it an excellent choice for building web applications and apis.</p>
+<p>feel free to explore more features of echo in the <a href="https://echo.labstack.com/">official documentation</a>. happy coding!</p>
 </article>
-
 
 <section>
 	<div>
@@ -138,16 +137,16 @@
 		
 		<hr>
 		<section>
-			<p style="font-size: 3rem; font-weight: bold; text-decoration: underline;">More Like This</p>
+			<p style="font-size: 3rem; font-weight: bold; text-decoration: underline;">more like this</p>
 			<div>
 				<ul id="posts">
 					
 					<p><li>
 	<p>
 		<a href="http://localhost:1313/the-advent-of-ai-in-developer-land/">
-			<span>The Advent of AI in Developer Land</span>
+			<span>the advent of ai in developer land</span>
 		</a>
-		<small><time>Dec 28, 2023</time></small>
+		<small><time>may 6, 2024</time></small>
 	</p>
 </li>
 </p>
@@ -155,9 +154,9 @@
 					<p><li>
 	<p>
 		<a href="http://localhost:1313/markdown-syntax-guide/">
-			<span>Markdown Syntax Guide</span>
+			<span>markdown syntax guide</span>
 		</a>
-		<small><time>Dec 27, 2023</time></small>
+		<small><time>may 5, 2024</time></small>
 	</p>
 </li>
 </p>
@@ -167,20 +166,15 @@
 		</section>
 		
 		
-
 	</div>
 </section>
-
-
-
-
 
 
 <hr>
 <script src="https://utteranc.es/client.js"
         repo="dpi0/echo"
         issue-term="pathname"
-        theme="gruvbox-dark"
+        theme="github-light"
         crossorigin="anonymous"
         async>
 </script>
@@ -207,8 +201,6 @@
 	<p xmlns:cc="http://creativecommons.org/ns#">posts by <span property="cc:attributionName"><a
 		href="https://github.com/dpi0">dpi0</a></span> — site built with <a
 			target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">hugo</a></p>
-
-
 </footer>
 </body>
 </html>

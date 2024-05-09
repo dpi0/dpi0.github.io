@@ -1,7 +1,7 @@
 +++
 author = "Hugo Authors"
-title = "Markdown Syntax Guide"
-date = "2023-12-27"
+title = "markdown syntax guide"
+date = "2024-05-05"
 description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags = [
     "dev"
@@ -14,60 +14,60 @@ series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+this article offers a sample of basic markdown syntax that can be used in hugo content files, also it shows whether basic html elements are decorated with css in a hugo theme.
 
-## Headings
+## headings
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+the following html `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
 
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
 
-## Paragraph
+## paragraph
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+xerum, quo qui aut unt expliquam qui dolut labo. aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? quiatem. nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+itatur? quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
 
-## Blockquotes
+## blockquotes
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+the blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
 
-#### Blockquote without attribution
+#### blockquote without attribution
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
+> tiam, ad mint andaepu dandae nostion secatur sequo quae.
+> **note** that you can use *markdown syntax* within a blockquote.
 
-#### Blockquote with attribution
+#### blockquote with attribution
 
-> Don't communicate by sharing memory, share memory by communicating.</p>
-> — <cite>Rob Pike[^1]</cite>
+> don't communicate by sharing memory, share memory by communicating.</p>
+> — <cite>rob pike[^1]</cite>
 
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+[^1]: the above quote is excerpted from rob pike's [talk](https://www.youtube.com/watch?v=paakcszug1c) during gopherfest, november 18, 2015.
 
-## Tables
+## tables
 
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
+tables aren't part of the core markdown spec, but hugo supports supports them out-of-the-box.
 
-   Name | Age
+   name | age
 --------|------
-    Bob | 27
-  Alice | 23
+    bob | 27
+  alice | 23
 
-#### Inline Markdown within tables
+#### inline markdown within tables
 
-| Inline&nbsp;&nbsp;&nbsp;     | Markdown&nbsp;&nbsp;&nbsp;  | In&nbsp;&nbsp;&nbsp;                | Table      |
+| inline&nbsp;&nbsp;&nbsp;     | markdown&nbsp;&nbsp;&nbsp;  | in&nbsp;&nbsp;&nbsp;                | table      |
 | ---------- | --------- | ----------------- | ---------- |
 | *italics*  | **bold**  | ~~strikethrough~~&nbsp;&nbsp;&nbsp; | `code`     |
 
-## Code Blocks
+## code blocks
 
-#### Code block with backticks
+#### code block with backticks
 
 ```
 html
@@ -109,35 +109,35 @@ html
 </html>
 {{< /highlight >}}
 
-## List Types
+## list types
 
-#### Ordered List
+#### ordered list
 
-1. First item
-2. Second item
-3. Third item
+1. first item
+2. second item
+3. third item
 
-#### Unordered List
+#### unordered list
 
-* List item
-* Another item
-* And another item
+* list item
+* another item
+* and another item
 
-#### Nested list
+#### nested list
 
-* Item
-1. First Sub-item
-2. Second Sub-item
+* item
+1. first sub-item
+2. second sub-item
 
-## Other Elements — abbr, sub, sup, kbd, mark
+## other elements — abbr, sub, sup, kbd, mark
 
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+<abbr title="graphics interchange format">gif</abbr> is a bitmap image format.
 
-H<sub>2</sub>O
+h<sub>2</sub>o
 
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
+x<sup>n</sup> + y<sup>n</sup> = z<sup>n</sup>
 
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
+press <kbd><kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>delete</kbd></kbd> to end the session.
 
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
 
