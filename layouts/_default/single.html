@@ -4,10 +4,10 @@
 		<div>
 			{{ if eq .Title "about me" }}
 			<!-- This is the About page, do not display the date -->
-			<h1 style="font-size: 4rem; color: #003B4D; text-decoration: underline; margin-bottom: -2rem; ">{{ .Title }}
+			<h1 style="margin-bottom: -2.1rem;">{{ .Title }}
 			</h1>
 			{{ else }}
-			<h1 style="font-size: 4rem; color: #003b4d; text-decoration: underline; ">{{ .Title }}</h1>
+			<h1>{{ .Title }}</h1>
 			<!-- {{ if .Date }} -->
 			<!-- {{ if eq .Lastmod .Date }} -->
 			<!-- <time>{{ .Date | time.Format (i18n "post.created") | lower}}</time> -->
@@ -16,7 +16,7 @@
 			<!-- {{ end }} -->
 			<!-- {{ end }} -->
 			{{ if .Params.updated }}
-		<time><strong>updated</strong> {{ .Params.updated | dateFormat "Jan 2, 2006" | lower }} </time>
+			<time><strong>updated</strong> {{ .Params.updated | dateFormat "Jan 2, 2006" | lower }} </time>
 			{{ else if .Date }}
 			<time>{{ .Lastmod | time.Format (i18n "post.created") | lower}}</time>
 			{{ end }}
@@ -41,7 +41,8 @@
 		{{ if gt (len $related) 0 }}
 		<hr>
 		<section>
-			<p style="font-size: 3rem; font-weight: bold; text-decoration: underline;">more like this</p>
+			<!-- <p style="font-size: 3rem; font-weight: bold; text-decoration: underline;">more like this</p> -->
+			<h2>more like this</h2>
 			<div>
 				<ul id="posts">
 					{{ range $related }}

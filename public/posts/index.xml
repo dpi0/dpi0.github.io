@@ -36,5 +36,12 @@
       <guid>http://localhost:1313/the-advent-of-ai-in-developer-land/</guid>
       <description>table of contents introduction understanding the impact code magic with machine learning ai in action: table recognition conclusion introduction artificial intelligence (ai) has become an integral part of the developer landscape, revolutionizing the way we approach problems and build solutions. in this blog post, we&amp;rsquo;ll explore some exciting developments and applications in the ever-evolving world of ai.&#xA;understanding the impact &amp;ldquo;artificial intelligence is the new electricity.&amp;rdquo; - andrew ng</description>
     </item>
+    <item>
+      <title>markdown syntax guide</title>
+      <link>http://localhost:1313/markdown-syntax-guide/</link>
+      <pubDate>Sun, 05 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/markdown-syntax-guide/</guid>
+      <description>this article offers a sample of basic markdown syntax that can be used in hugo content files, also it shows whether basic html elements are decorated with css in a hugo theme.&#xA;headings the following html &amp;lt;h1&amp;gt;—&amp;lt;h6&amp;gt; elements represent six levels of section headings. &amp;lt;h1&amp;gt; is the highest section level while &amp;lt;h6&amp;gt; is the lowest.&#xA;h1 h2 h3 h4 h5 h6 paragraph xerum, quo qui aut unt expliquam qui dolut labo.</description>
+    </item>
   </channel>
 </rss>

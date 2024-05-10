@@ -7,17 +7,15 @@
 }
 
 :root {
-	/* --accent: #009CCC; */
-	/* --link-hover: #8EC07C; */
-	/* --bg: #f0fcff; */
-	/* --bg1: #313a3d; */
-	/* --bg2: #A89984; */
-	/* --fg: #ff0000; */
-	--fg2: #007194;
+	--background: #fafeff;
+	--text: #003747;
+	--accent: #0091db;
+	--accent-hover: #00ace0;
+	--second: #003b4d;
 }
-
 html {
-	font-size: 65%;
+	font-size: 60%;
+	/* scrollbar-color: #6c6c6c #2e2e2e;	 */
 }
 
 body {
@@ -26,12 +24,14 @@ body {
 	/* font-family: Menlo; */
 	/* font-family: merriweather; */
 	/* font-family: "/static/fonts/SpaceMonoNerdFont-Regular.ttf"; */
-	color: var(--bg1);
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 16px;
 	line-height: 1.6;
 	overflow-wrap: break-word;
+	background: var(--background);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 header#banner {
@@ -39,20 +39,67 @@ header#banner {
 }
 
 header#banner a {
-	color: var(--bg1);
+	color: var(--background);
+	font-size: 3rem;
 	text-decoration: none;
 }
 
 header#banner a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 header#banner h2 {
+	background-color: var(--accent);
 	display: inline;
 	font-size: 21px;
 	font-size: 2.1rem;
 	margin: 0 8px 0 0;
+	text-decoration: none;
+	padding: 0.7rem 0.3rem 0.1rem 0.3rem;
+	border-radius: 0.3rem;
+	text-decoration: none;
+	padding: 0.7rem 0.3rem 0.1rem 0.3rem;
+	border-radius: 0.3rem;
+
 }
+
+
+header#banner h2:hover {
+	background-color: var(--accent-hover);
+}
+
+header#banner nav ul li a {
+	color: var(--second);
+	font-size: 2rem;
+}
+
+main#content a {
+	color: var(--accent);
+}
+
+main#content p {
+	color: var(--text);
+}
+
+
+main#content hr {
+	background: var(--second);
+}
+
+
+main#content ul#posts small {
+	color: var(--second);
+}
+
+main#content ul#posts li a:hover {
+	color: var(--accent-hover);
+}
+
+
+main#content header#post-header div {
+	color: var(--second);
+}
+
 
 header#banner nav {
 	display: inline-block;
@@ -73,7 +120,6 @@ header#banner nav ul li {
 
 header#banner nav ul li a:hover {
 	text-decoration: underline;
-	/* color: var(--fg2); */
 }
 
 main#content a {
@@ -82,7 +128,7 @@ main#content a {
 
 main#content a:hover {
 	text-decoration: underline;
-	color: var(--link-hover);
+	color: var(--accent-hover);
 }
 
 main#content h1,
@@ -92,29 +138,42 @@ main#content h4,
 main#content h5,
 main#content h6 {
 	margin-bottom: 1rem;
-	color: #003b4d;
-	text-decoration: underline;
+	color: var(--second);
 	/* padding: 0.2rem; */
 	/* border: 2px solid #003B4D; */
 	/* border-radius: 0.3rem 0.3rem;  */
 	line-height: 1.15;
 	display: inline-block;
+	text-decoration: underline;
 }
 
 main#content h1 {
-	font-size: 3.5rem;
-
+	font-size: 4rem;
 }
-
 main#content h2 {
-	font-size: 3rem;
-	margin-top: 4rem;
+  position: relative;
+  font-size: 3rem;
+  margin-top: 1.5rem;
+  text-decoration: underline; /* Keep underline on the heading text */
+  margin-left: 20px; /* Move the heading text to the right */
 }
 
-main#content h3 {
-	font-size: 19px;
-	font-size: 1.9rem;
+main#content h2::before {
+  content: "#";
+  position: absolute;
+  margin-left: -20px; /* Optional: Add some spacing between # and the heading text */
 }
+main#content h3 {
+	font-size: 2rem;
+	margin-top: 1rem;
+
+}
+
+main#content h4 {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+}
+
 
 main#content h1+p,
 main#content h2+p,
@@ -122,7 +181,17 @@ main#content h3+p,
 main#content h4+p,
 main#content h5+p,
 main#content h6+p {
-	margin-top: 5px;
+	margin-top: 0.1rem;
+}
+
+main#content h1+table,
+main#content h2+table,
+main#content h3+table,
+main#content h4+table,
+main#content h5+table,
+main#content h6+table {
+	margin-top: 0.1rem;
+	margin-bottom: 1rem;
 }
 
 main#content p {
@@ -132,6 +201,8 @@ main#content p {
 main#content hr {
 	height: 1px;
 	border: 0;
+	width: 100%;
+
 }
 
 main#content abbr {
@@ -160,7 +231,7 @@ main#content ul#posts small {
 
 main#content ul#posts span:hover {
 	text-decoration: underline;
-	color: var(--link-hover);
+	color: var(--accent-hover);
 }
 
 main#content ul#posts a:hover small time {
@@ -170,20 +241,18 @@ main#content ul#posts a:hover small time {
 /* single.html styles */
 main#content header#post-header h1 {
 	display: block;
-	font-size: 25px;
-	font-size: 2.3rem;
 	font-weight: 600;
 	line-height: 1.15;
+	color: var(--second);
 }
 
 main#content header#post-header>div {
 	display: block;
 	font-size: 0.85em;
-	color: #767676;
 }
 
 main#content #toc {
-	border: 1px solid var(--bg2);
+	border: 1px solid var(--second);
 	padding: 1rem;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -251,6 +320,8 @@ main#content img {
 
 main#content figure {
 	margin: 16px 0;
+	max-width: 90%;
+
 }
 
 main#content figure img {
@@ -283,7 +354,6 @@ main#content figure figcaption p {
 main#content table {
 	border-collapse: collapse;
 	table-layout: fixed;
-	/* width: 100%; */
 }
 
 main#content table,
@@ -305,7 +375,7 @@ main#content blockquote {
 	margin-bottom: 10px;
 	margin-left: 50px;
 	padding-left: 15px;
-	border-left: 3px solid var(--bg2);
+	border-left: 3px solid var(--second);
 }
 
 main#content code,
@@ -325,7 +395,8 @@ main#content pre {
 	font-size: 1.4rem;
 	white-space: pre;
 	margin: 20px 0;
-	padding: 1.5rem 1.5rem;
+	width: 100%;
+	padding: 1.5rem 2.2rem;
 	line-height: 1.4;
 }
 

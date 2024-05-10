@@ -15,11 +15,6 @@
 
     {{ $resources = $resources | append (resources.Get "css/responsive.css") -}}
 
-    {{ $dark := .Site.Params.dark | default "auto" -}}
-    {{ if not (eq $dark "off") -}}
-        {{ $resources = $resources | append (resources.Get "css/dark.css" | resources.ExecuteAsTemplate "dark.css" .) -}}
-    {{ end -}}
-
     {{ if .Site.Params.highlight -}}
         {{ $resources = $resources | append (resources.Get "css/syntax.css") -}}
     {{ end -}}
@@ -32,7 +27,6 @@
     {{ if eq .Permalink .Site.Home.Permalink }}
         <title>echo: a reflection in the sea of internet</title>
     {{ else }}
-        <!-- Other pages -->
-        <title>{{ .Title }} | echo</title>
+        <title>{{ .Title | lower}} | echo</title>
     {{ end }}
 </head>
