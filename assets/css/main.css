@@ -155,18 +155,11 @@ main#content h2 {
   font-size: 3rem;
   margin-top: 1.5rem;
   text-decoration: underline; /* Keep underline on the heading text */
-  margin-left: 20px; /* Move the heading text to the right */
 }
 
-main#content h2::before {
-  content: "#";
-  position: absolute;
-  margin-left: -20px; /* Optional: Add some spacing between # and the heading text */
-}
 main#content h3 {
 	font-size: 2rem;
 	margin-top: 1rem;
-
 }
 
 main#content h4 {
