@@ -1,4 +1,4 @@
-baseURL = 'https://dpi0.github.io'
+baseURL = 'https://dpi0.github.io/echo'
 languageCode = 'en-us'
 title = 'echo'
 enableInlineShortcodes = true
@@ -9,7 +9,6 @@ pygmentsUseClasses = true
 
 [params]
 description = "a reflection in the sea of internet"
-dark = "on"
 highlight = true
 
 [menu]
