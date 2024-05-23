@@ -1,2 +1,1 @@
-# echo
-personal website
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=inter&weight=900&size=75&pause=3025&color=0091DB&center=true&vCenter=true&repeat=false&random=false&width=1366&height=85&lines=>+echo;a+reflection+in+the+sea+of+internet)](https://git.io/typing-svg)
